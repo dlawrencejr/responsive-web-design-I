@@ -184,15 +184,24 @@ footer {
 }
 
 @media (max-width: 800px){
+  .container {
+    width: 100%;
+    /* TB LR */
+    margin:0 auto;
+  }
+  
+
   .cta img {
     display: none;
+    width:800px
   }
+
   header{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
     align-items: center;
   }
+
  header img{
     align-self: center;
   }
@@ -200,24 +209,22 @@ footer {
     display:flex;
     flex-direction: column;
     align-self: center;
-    vertical-align: top;
-    font-size: 77px;
-    margin-top: 120px;
-    
-    padding: 0px 75px;
   }
-  
+
   .cta .cta-text button {
-    
-    background: white;
-    vertical-align: top;
-    margin-top: 6px;
-    padding: 8px 44px;
-    font-size: 17px;
-    border: 1px solid black;
-    cursor: pointer;
     width: 200px;
     align-self: center;
   }
+
+  .main-content .top-content {
+    display: flex;
+    padding: 0 10px;
+  }
+
+  .main-content .middle-img {
+    margin: 100%;
+    margin-top: 45px;
+  }
+  
   
 }
