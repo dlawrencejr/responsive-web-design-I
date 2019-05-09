@@ -187,9 +187,8 @@ footer {
   .container {
     width: 100%;
     /* TB LR */
-    margin:0 auto;
+    /* margin:0 auto; */
   }
-  
 
   .cta img {
     display: none;
@@ -208,23 +207,64 @@ footer {
   .cta .cta-text {
     display:flex;
     flex-direction: column;
-    align-self: center;
+  
   }
 
   .cta .cta-text button {
-    width: 200px;
+  
     align-self: center;
   }
 
   .main-content .top-content {
     display: flex;
-    padding: 0 10px;
+    
   }
 
   .main-content .middle-img {
-    margin: 100%;
-    margin-top: 45px;
+    width: 100%;
+    
+  }
+  .main-content .bottom-content {
+    display: flex;
   }
   
+}
+
+@media (max-width: 500px){
+
+.container{
+   width: 100%;
+}
+
+header nav{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  width:100%;
+}
+header nav a{
+  padding: 10px;
+    margin: 10px;
+    
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+
+}
+header .logo {
+  margin-top: 10px;
   
+}
+header nav a:first-child {
+ 
+  padding: 10px;
+  
+}
+
+header nav a:last-child {
+  text-align: center;
+}
+
+
 }
